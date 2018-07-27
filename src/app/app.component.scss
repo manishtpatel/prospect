@@ -51,3 +51,54 @@
     }
   }
 }
+
+.team {
+  .team-box {
+    display: flex;
+    margin: 5px;
+    max-width: 480px;
+  }
+  .team-box-image {
+    background-size: cover;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  .team-box-detail {
+    margin-left: 1rem;
+    hr {
+      width: 5rem;
+      background-color: blue;
+      height: 4px;
+      margin: 0;
+    }
+    h1 {
+      @extend .subtitle;
+      @extend .is-4;
+      margin-bottom: 0 !important;
+    }
+    div {
+      color: gray;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 100%;
+  @include mobile(){
+    flex-direction: column;
+  }
+  .logo{
+
+  }
+  .contact{
+
+  }
+}
