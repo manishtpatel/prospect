@@ -1,0 +1,53 @@
+@import "~bulma";
+.services {
+  @include mobile() {
+    margin: 1rem;
+  }
+  .management {}
+  .acquisitions {
+    @include tablet() {
+      margin-left: 10rem;
+    }
+  }
+  .investment {
+    @include tablet() {
+      margin-left: 5rem;
+    }
+  }
+  hr {
+    background-color: red;
+    height: 4px;
+    margin-bottom: 0;
+  }
+  h1 {
+    @extend .title;
+    @extend .is-4;
+    margin-bottom: 0 !important;
+  }
+}
+
+.hotels {
+  // style="display: flex; justify-content: center;"
+  @extend .columns;
+  .hotel {
+    @extend .column;
+    height: 300px;
+    position: relative;
+    background-size: cover;
+    >div {
+      color: #fff;
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      width: 100%;
+      text-align: right;
+      h1 {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      h2 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
