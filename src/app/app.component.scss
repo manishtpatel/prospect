@@ -1,7 +1,8 @@
 @import "~bulma";
 .services {
+  padding: 1rem;
   @include mobile() {
-    margin: 1rem;
+    // margin: 1rem;
   }
   .management {}
   .acquisitions {
