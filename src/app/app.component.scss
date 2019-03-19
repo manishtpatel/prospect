@@ -1,4 +1,8 @@
 @import "~bulma";
+.net-lease-1 {
+  padding: 1rem;
+}
+
 .services {
   padding: 1rem;
   @include mobile() {
@@ -88,18 +92,14 @@
   }
 }
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   height: 100%;
-  @include mobile(){
+  @include mobile() {
     flex-direction: column;
   }
-  .logo{
-
-  }
-  .contact{
-
-  }
+  .logo {}
+  .contact {}
 }
